@@ -17,6 +17,10 @@ AWS EC2 Amazon linux
 6, (in docker container) `rails s --port=80 -e production -d`
 
 
+## enter docker container
+
+`docker start mimi_admin && docker exec -it mimi_admin /bin/bash`
+
 ## restart (in docker container)
 
 1, `ps aux | grep [プロセス名] | grep -v grep | awk '{ print "kill -9", $2 }' | sh`
