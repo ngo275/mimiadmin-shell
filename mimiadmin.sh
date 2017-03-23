@@ -16,10 +16,4 @@ cd /home/ec2-user
 
 git clone https://github.com/candlegithub/mimi_admin.git
 
-docker run  -it -p 80:80 -v /home/ec2-user/mimi_admin/:/opt --name mimi_admin ruby:2.3.0 /bin/bash && cd /opt
-
-bundle install
-
-bundle exec rake assets:precompile
-
-bundle exec rake assets:precompile
+docker run  -it -p 80:80 -v /home/ec2-user/mimi_admin/:/opt --name mimi_admin ruby:2.3.0 /bin/bash
