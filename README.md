@@ -17,10 +17,10 @@ AWS EC2 Amazon linux
 6, (in docker container) `rails s --port=80 -e production -d`
 
 
-## restart 
+## restart (in docker container)
 
-1, ps aux | grep [プロセス名] | grep -v grep | awk '{ print "kill -9", $2 }' | sh
+1, `ps aux | grep [プロセス名] | grep -v grep | awk '{ print "kill -9", $2 }' | sh`
 
-2, bundle exec rake assets:precompile
+2, `bundle exec rake assets:precompile`
 
-3, rails s --port=80 -e production -d
+3, `rails s --port=80 -e production -d`
