@@ -23,7 +23,7 @@ AWS EC2 Amazon linux
 
 ## restart (in docker container)
 
-1, `ps aux | grep [プロセス名] | grep -v grep | awk '{ print "kill -9", $2 }' | sh`
+1, `ps aux | grep rails | grep -v grep | awk '{ print "kill -9", $2 }' | sh`
 
 2, `bundle exec rake assets:precompile`
 
