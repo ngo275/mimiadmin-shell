@@ -2,6 +2,8 @@
 
 AWS EC2 Amazon linux
 
+## setup
+
 1, `cd /home/ec2-user`
 
 2, `sudo su`
@@ -13,3 +15,12 @@ AWS EC2 Amazon linux
 5, (in docker container) `bundle exec rake assets:precompile`
 
 6, (in docker container) `rails s --port=80 -e production -d`
+
+
+## restart 
+
+1, ps aux | grep [プロセス名] | grep -v grep | awk '{ print "kill -9", $2 }' | sh
+
+2, bundle exec rake assets:precompile
+
+3, rails s --port=80 -e production -d
