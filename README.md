@@ -16,7 +16,7 @@ AWS EC2 Amazon linux
 
 6, (in docker container) `rails s --port=80 -e production -d`
 
-
+This command makes a docker container.
 `docker run  -it -p 80:80 -v ${PWD}/:/opt --name mimi_admin ruby:2.3.0 /bin/bash`
 
 
