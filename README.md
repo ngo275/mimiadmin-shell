@@ -1,6 +1,6 @@
 # mimiadmin-shell
 
-AWS EC2 Amazon linux
+AWS EC2 Amazon Linux
 
 ## setup
 
