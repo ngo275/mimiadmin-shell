@@ -20,11 +20,11 @@ This command makes a docker container.
 `docker run  -it -p 80:80 -v ${PWD}/:/opt --name mimi_admin ruby:2.3.0 /bin/bash`
 
 
-## enter docker container
+## enter a docker container
 
 `docker start mimi_admin && docker exec -it mimi_admin /bin/bash`
 
-## restart (in docker container)
+## restart (in a docker container)
 
 1, `ps aux | grep rails | grep -v grep | awk '{ print "kill -9", $2 }' | sh`
 
